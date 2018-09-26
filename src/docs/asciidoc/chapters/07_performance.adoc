@@ -1,0 +1,78 @@
+
+[background-color="#02303A"]
+== Gradle Kotlin DSL performance
+
+=== Gradle Kotlin DSL performance
+
+[%step]
+* Gradle link:{user-manual}build_lifecycle.html#sec:build_phases[configuration phase]
+* Configuring your build when nothing has changed takes more than a second?
+[%step]
+** Make sure to check out the link:https://guides.gradle.org/performance/[Gradle Performance Guide]
+** We can help you pinpoints bottlenecks at https://github.com/gradle/gradle/issues/1628
+* In comparison with the Gradle Groovy DSL
+
+
+=== Gradle Kotlin DSL vs. Groovy DSL
+
+*when nothing has changed*
+
+[%step]
+* Similar performance characteristics for most builds
+* ~100ms gap on a large build with 500 sub projects
+* ~2ms hit per project in that scenario, ymmv
+
+image::perf-vs-groovy.png[width=640,height=180]
+
+
+=== Gradle Kotlin DSL vs. Groovy DSL
+
+*first use, or, change in `buildSrc`*
+
+[%step]
+* Slower in certain scenarios
+[%step]
+** first use (checkout, pulling changes, switching branches)
+** changes in the build logic, the worse being changing `buildSrc`
+* We are talking about ~3.5 times slower at the moment
+* ~1min gap on a large build with 500 sub projects
+* ~120ms per project in that scenario, ymmv
+* *Script compilation is the main bottleneck*
+
+
+
+=== Gradle Build Cache
+
+[%step]
+* Script compilation can be cached in a Gradle Build Cache
+* `org.gradle.caching=true` or `--build-cache`
+* In general, build cache helps with your overall build performance
+** link:https://guides.gradle.org/using-build-cache/[guides.gradle.org/using-build-cache]
+* Local and remote
+* Gradle provides a Docker image for a link:https://hub.docker.com/r/gradle/build-cache-node/[build cache node]
+* Pair it with Gradle Enterprise to get
+** replication, monitoring, node management etc...
+** link:https://gradle.com/build-cache/[gradle.com/build-cache]
+
+=== Performance opportunities
+
+[%step]
+* Compilation avoidance
+* Parallel script compilation
+* Faster Kotlin compilation
+* Targeted optimization
+
+=== General performance advice
+
+[%hardbreaks]
+*Configuring your build when nothing has changed takes*
+*more than a second?*
+
+[%hardbreaks]
+Make sure to check out the
+link:https://guides.gradle.org/performance/[Gradle Performance Guide]
+
+[%hardbreaks]
+We can help you pinpoints bottlenecks at
+https://github.com/gradle/gradle/issues/1628
+

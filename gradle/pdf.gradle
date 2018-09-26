@@ -1,0 +1,29 @@
+configurations {
+    pdf
+}
+repositories {
+    jcenter()
+}
+dependencies {
+    pdf 'me.champeau.deck2pdf:deck2pdf:0.3.0'
+}
+
+task export {}
+
+["pdf","jpeg","png"].each { type ->
+    def gentask = task "generate${type.capitalize()}"(type:JavaExec) {
+        dependsOn asciidoctor
+        main = 'me.champeau.deck2pdf.Main'
+        workingDir = file("$buildDir/asciidoc/revealjs")
+        args = ['index.html',"${type}/${project.name}.$type",'--profile=revealjs', '--width=1280' ,'--height=720']
+        classpath = configurations.pdf
+
+        inputs.file("$workingDir/index.html")
+        outputs.files("$workingDir/$type")
+
+        doFirst {
+            file("$workingDir/$type").mkdirs()
+        }
+    }
+    export.dependsOn(gentask)
+}

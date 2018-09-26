@@ -1,0 +1,7 @@
+= Type safe build logic with the Gradle Kotlin DSL
+
+> KotlinConf 2018
+
+[%hardbreaks]
+Rendered slides available at
+link:https://eskatos.github.io/kotlinconf2018-type-safe-build-logic[eskatos.github.io/kotlinconf2018-type-safe-build-logic]

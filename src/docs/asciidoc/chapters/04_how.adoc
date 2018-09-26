@@ -1,0 +1,44 @@
+
+[background-color="#02303A"]
+== What makes all this possible?
+
+=== The Gradle build model
+
+[%step]
+* Gradle Plugins contribute reusable and configurable models
+* This is a dynamic model
+* The Gradle Kotlin DSL provides a static view over that model
+
+=== `.kt` vs `.kts` vs `.gradle.kts`
+
+[%step]
+* `.kt` files contain plain Kotlin code
+** assumed to be compiled by the kotlin compiler
+* `.kts` files contain Kotlin code
+** assumed to be executed by the kotlin scripting support
+* `.gradle.kts` files contain Kotlin code
+** assumed to be hosted by Gradle
+
+=== `.gradle.kts`
+
+[%step]
+* Gradle Kotlin DSL in the classpath
+* Script compilation dependencies coming from Gradle
+* Implicit imports
+* Custom tailored IDE script editor support
+
+=== IDE support
+
+image::ide-matrix.png[width=850,height=450]
+
+=== The Gradle Kotlin DSL sugar
+
+[%step]
+* Kotlin friendly extensions of the Gradle API
+** `KClass<T>`, `reified<T>()`
+** Delegated properties for Gradle properties and collections
+* Dynamically generated Kotlin extensions
+** calculated right before evaluating the script body
+** for model elements contributed by plugins (configurations, extensions, tasks etc...)
+* Interoperability utilities
+// * Configuration avoidance by default

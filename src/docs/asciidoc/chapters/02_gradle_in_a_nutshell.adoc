@@ -1,0 +1,79 @@
+[background-color="#02303A"]
+== Gradle Build Tool in a nutshell
+
+=== Gradle Build Tool in a nutshell
+
+[%step]
+* Groovy and Kotlin build scripts
+* Task configuration and execution
+* Dependency resolution
+* Work avoidance
+
+image::gradle-task-dag.png[height=350px]
+
+[transition=none]
+=== Gradle Plugins
+
+[%step]
+* Core Plugins (`java`, `jacoco`, `maven-publish` ...)
+* Community Plugins (`kotlin`, `android`, `golang`, `pygradle`, `asciidoctor` ...)
+
+image::gradle-task-dag.png[height=350px]
+
+
+[transition=none]
+=== Gradle Plugins
+
+* Gradle Plugins contribute
+[%step]
+** reusable and configurable Gradle Tasks
+** configurable Gradle Extensions
+
+image::gradle-task-dag.png[height=350px]
+
+
+[transition=none]
+=== Gradle Plugins
+
+* Gradle Plugins contribute *a model to configure*
+[%step]
+** in build scripts
+** using a DSL
+
+image::gradle-task-dag.png[height=350px]
+
+
+=== A Java library
+
+[source,groovy]
+----
+plugins {
+   `java-library`
+}
+
+dependencies {
+   api("com.acme:foo:1.0")
+   implementation("com.zoo:monkey:1.1")
+}
+
+tasks.withType<JavaCompile> {
+    // ...
+}
+----
+
+=== A native app
+
+[source,groovy]
+----
+plugins {
+    `cpp-application`
+}
+
+application {
+    baseName = "my-app"
+}
+
+toolChains {
+    // ...
+}
+----

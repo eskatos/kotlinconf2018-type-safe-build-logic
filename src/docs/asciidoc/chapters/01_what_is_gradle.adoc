@@ -1,0 +1,52 @@
+[background-color="#02303A"]
+== What is Gradle?
+
+=== Gradle's purpose
+
+Gradle Build Tool is a build and automation tool
+
+[%step]
+* JVM based
+* Implemented in Java
+* 100% Free Open Source - Apache Standard License 2.0
+
+=== Agnostic Build System
+
+[%step]
+* JVM ecosystem
+** Java, Kotlin, Groovy, Scala, Clojure ...
+* Native ecosystem
+** C, C++, Swift, ...
+* Android
+* Misc
+** Go, Python, JavaScript, Asciidoctor, ...
+
+=== Gradle in figures
+
+[%step]
+* > 6M downloads / month
+* https://techcrunch.com/2017/04/07/tracking-the-explosive-growth-of-open-source-software/[#17 OSS projects worldwide] says TechCrunch
+* 35+ Gradle Engineers
+* 300K builds/week @ LinkedIn
+
+=== Gradle Inc.
+
+The company behind Gradle
+
+[%step]
+* Gradle Build Tool - link:https://gradle.org[gradle.org]
+* Gradle Enterprise (Build Scans and Build Cache) - link:https://gradle.com[gradle.com]
+* (Gradle consulting, support, development services etc.)
+* (Training: online, public and in-house)
+
+=== Gradle is hiring!
+
+* Fully distributed development team
+* Exciting project used by millions
+* Build Tool team and Gradle Enterprise positions
+
+If anything you hear from now on sounds like a great problem to solve,
+
+Talk to us!
+
+==== link:https://gradle.com/careers/[gradle.com/careers]

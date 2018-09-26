@@ -1,0 +1,922 @@
+{
+  "stdout": [
+    [
+      2.300462,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      2.8e-05,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.044821,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      1.9e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      1.844499,
+      "g"
+    ],
+    [
+      0.328105,
+      "\bgw"
+    ],
+    [
+      0.211988,
+      " "
+    ],
+    [
+      0.97822,
+      "r"
+    ],
+    [
+      0.161749,
+      "u"
+    ],
+    [
+      0.040012,
+      "n"
+    ],
+    [
+      0.343709,
+      "\u001b[?1l\u001b>\u001b[?2004l"
+    ],
+    [
+      3.1e-05,
+      "\r\r\n"
+    ],
+    [
+      0.001334,
+      "\u001b]2;./gradlew --daemon run\u0007\u001b]1;gw\u0007"
+    ],
+    [
+      0.318343,
+      "\u001b[0m"
+    ],
+    [
+      0.230676,
+      "\r\n\r\n"
+    ],
+    [
+      2.9e-05,
+      "\u001b[2A\u001b[1m<\u001b[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s]\u001b[m\u001b[35D\u001b[1B\u001b[1m> root project\u001b[m\u001b[14D\u001b[1B"
+    ],
+    [
+      0.086332,
+      "\u001b[2A\u001b[1m<\u001b[0;32;1m=========\u001b[0;39;1m----> 75% EXECUTING [0s]\u001b[m\u001b[0K\u001b[34D\u001b[1B\u001b[1m> :run\u001b[m\u001b[0K\u001b[6D\u001b[1B"
+    ],
+    [
+      0.040165,
+      "\u001b[2A\u001b[0K\r\n\u001b[1m> Task :run\u001b[m\u001b[33m \u001b[39m\r\n"
+    ],
+    [
+      2.7e-05,
+      "The answer is 43\r\n\r\n\r\n"
+    ],
+    [
+      1.4e-05,
+      "\u001b[32;1mBUILD SUCCESSFUL\u001b[0;39m in 0s\r\n"
+    ],
+    [
+      4e-05,
+      "2 actionable tasks: 2 executed\r\n\u001b[2K"
+    ],
+    [
+      0.001282,
+      "\u001b[0m"
+    ],
+    [
+      0.318859,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      8.2e-05,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007"
+    ],
+    [
+      1.9e-05,
+      "\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.052125,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K\u001b[?1h\u001b="
+    ],
+    [
+      2.2e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.90332,
+      "c"
+    ],
+    [
+      0.253583,
+      "\bca"
+    ],
+    [
+      0.185684,
+      "t"
+    ],
+    [
+      0.166673,
+      " "
+    ],
+    [
+      0.147434,
+      "b"
+    ],
+    [
+      0.173721,
+      "u"
+    ],
+    [
+      0.099939,
+      "i"
+    ],
+    [
+      0.150694,
+      "ld"
+    ],
+    [
+      0.437796,
+      "."
+    ],
+    [
+      0.220736,
+      "gradle\u001b[1m \u001b[0m"
+    ],
+    [
+      0.753545,
+      "\b\u001b[0m \b"
+    ],
+    [
+      7.1e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      4.9e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001982,
+      "\u001b]2;cat build.gradle\u0007\u001b]1;cat\u0007"
+    ],
+    [
+      0.002171,
+      "apply plugin: 'java'\r\napply plugin: 'application'\r\napply plugin: 'idea'\r\n\r\ngroup \"org.sample\"\r\nversion \"1.0\"\r\n\r\nmainClassName = \"org.sample.myapp.Main\"\r\n\r\ndependencies {\r\n    compile \"org.sample:number-utils:1.0\"\r\n    compile \"org.sample:string-utils:1.0\"\r\n}\r\n\r\nrepositories {\r\n    ivy {\r\n        url project.file(\"../local-repo\")\r\n    }\r\n    jcenter()\r\n}\r\n\r\ntask publishDeps {\r\n    dependsOn gradle.includedBuilds*.task(':uploadArchives')\r\n}\r\n\r\n"
+    ],
+    [
+      4e-05,
+      "task cleanAll {\r\n    dependsOn gradle.includedBuilds*.task(':clean')\r\n}\r\n"
+    ],
+    [
+      0.000333,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000177,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.053665,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      2.9e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      5.337413,
+      "c"
+    ],
+    [
+      0.203552,
+      "\bca"
+    ],
+    [
+      0.168217,
+      "t"
+    ],
+    [
+      0.122415,
+      " "
+    ],
+    [
+      0.173906,
+      "s"
+    ],
+    [
+      0.162247,
+      "r"
+    ],
+    [
+      0.193326,
+      "c\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.454856,
+      "\b\u001b[0m/m"
+    ],
+    [
+      0.079536,
+      "a"
+    ],
+    [
+      0.20032,
+      "in\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.217757,
+      "\b\u001b[0m/java\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.262764,
+      "\b\u001b[0m/org\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.367038,
+      "\b\u001b[0m/sample\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.361575,
+      "\b\u001b[0m/myapp\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.387166,
+      "\b\u001b[0m/Main.java\u001b[1m \u001b[0m"
+    ],
+    [
+      0.609363,
+      "\b\u001b[0m \b\u001b[?1l\u001b>"
+    ],
+    [
+      3.7e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001451,
+      "\u001b]2;cat src/main/java/org/sample/myapp/Main.java\u0007\u001b]1;cat\u0007"
+    ],
+    [
+      0.001879,
+      "/*\r\n * Copyright 2016 the original author or authors.\r\n *\r\n * Licensed under the Apache License, Version 2.0 (the \"License\");\r\n * you may not use this file except in compliance with the License.\r\n * You may obtain a copy of the License at\r\n *\r\n *      http://www.apache.org/licenses/LICENSE-2.0\r\n *\r\n * Unless required by applicable law or agreed to in writing, software\r\n * distributed under the License is distributed on an \"AS IS\" BASIS,\r\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n * See the License for the specific language governing permissions and\r\n * limitations under the License.\r\n */\r\n\r\npackage org.sample.myapp;\r\n\r\nimport org.sample.numberutils.Numbers;\r\nimport org.sample.stringutils.Strings;\r\n\r\npublic class Main {\r\n\r\n    public static void main(String... args) {\r\n        new Main().printAnswer();\r\n    }\r\n\r\n    public void printAnswer() {\r\n        String output = Strings.concat(\" The answer is    \", Numbers.add(19, 23));\r\n        System.out.println(output);\r\n    }\r\n}\r\n"
+    ],
+    [
+      0.000228,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000169,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007"
+    ],
+    [
+      4.6e-05,
+      "\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.05814,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      1.8e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      14.065548,
+      "l"
+    ],
+    [
+      0.170226,
+      "\bll"
+    ],
+    [
+      0.246624,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      5.5e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001571,
+      "\u001b]2;ls --color=tty -lh\u0007"
+    ],
+    [
+      6.1e-05,
+      "\u001b]1;ll\u0007"
+    ],
+    [
+      0.00379,
+      "total 44K\r\n"
+    ],
+    [
+      3.8e-05,
+      "drwxr-xr-x 4 cchampeau cchampeau 4.0K Jan 29 15:49 \u001b[0m\u001b[01;34mattic\u001b[0m\r\ndrwxrwxr-x 4 cchampeau cchampeau 4.0K Jan 29 15:52 \u001b[01;34mbuild\u001b[0m\r\n-rw-r--r-- 1 cchampeau cchampeau  491 Sep  6  2016 build.gradle\r\n-rwxr-xr-x 1 cchampeau cchampeau  183 Jan 29 15:42 \u001b[01;32mclone.sh\u001b[0m\r\n"
+    ],
+    [
+      2.3e-05,
+      "drwxr-xr-x 3 cchampeau cchampeau 4.0K Sep  6  2016 \u001b[01;34mgradle\u001b[0m\r\n-rwxr-xr-x 1 cchampeau cchampeau 5.2K Sep  6  2016 \u001b[01;32mgradlew\u001b[0m\r\n-rw-r--r-- 1 cchampeau cchampeau 2.3K Sep  6  2016 gradlew.bat\r\ndrwxr-xr-x 2 cchampeau cchampeau 4.0K Jan 29 15:49 \u001b[01;34mmodules\u001b[0m\r\n"
+    ],
+    [
+      2.6e-05,
+      "-rw-r--r-- 1 cchampeau cchampeau  122 Sep  1  2016 settings.gradle\r\ndrwxr-xr-x 3 cchampeau cchampeau 4.0K Sep  1  2016 \u001b[01;34msrc\u001b[0m\r\n"
+    ],
+    [
+      0.000434,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000162,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007"
+    ],
+    [
+      3.5e-05,
+      "\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.048853,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      1.7e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      2.6e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.636526,
+      "m"
+    ],
+    [
+      0.141558,
+      "\bmv"
+    ],
+    [
+      0.120765,
+      " "
+    ],
+    [
+      0.185402,
+      "a"
+    ],
+    [
+      0.206151,
+      "t"
+    ],
+    [
+      0.188138,
+      "t"
+    ],
+    [
+      0.224192,
+      "ic\u001b[1m/\u001b[0m"
+    ],
+    [
+      1.449612,
+      "\b\u001b[0m/n"
+    ],
+    [
+      0.173897,
+      "u"
+    ],
+    [
+      0.242332,
+      "m"
+    ],
+    [
+      0.130932,
+      "ber-utils\u001b[1m/\u001b[0m"
+    ],
+    [
+      2.236898,
+      "\b\u001b[0m \b"
+    ],
+    [
+      0.152495,
+      " "
+    ],
+    [
+      0.1718,
+      "m"
+    ],
+    [
+      0.150319,
+      "o"
+    ],
+    [
+      0.590223,
+      "dules\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.470748,
+      "\b\u001b[0m \b"
+    ],
+    [
+      1.8e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      3.4e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.000863,
+      "\u001b]2;mv attic/number-utils modules\u0007\u001b]1;mv\u0007"
+    ],
+    [
+      0.002162,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000111,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007"
+    ],
+    [
+      1.4e-05,
+      "\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.047139,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      3.8e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      3.27804,
+      "g"
+    ],
+    [
+      0.188509,
+      "\bgw"
+    ],
+    [
+      0.1395,
+      " "
+    ],
+    [
+      0.142388,
+      "r"
+    ],
+    [
+      0.144248,
+      "u"
+    ],
+    [
+      0.081542,
+      "n"
+    ],
+    [
+      0.194137,
+      " "
+    ],
+    [
+      0.443742,
+      "-"
+    ],
+    [
+      0.16157,
+      "-"
+    ],
+    [
+      0.52615,
+      "c"
+    ],
+    [
+      0.082175,
+      "o"
+    ],
+    [
+      0.153727,
+      "n"
+    ],
+    [
+      0.120769,
+      "s"
+    ],
+    [
+      0.101422,
+      "o"
+    ],
+    [
+      0.174186,
+      "l"
+    ],
+    [
+      0.099585,
+      "e"
+    ],
+    [
+      0.538859,
+      "="
+    ],
+    [
+      0.211079,
+      "v"
+    ],
+    [
+      0.136341,
+      "e"
+    ],
+    [
+      0.080395,
+      "r"
+    ],
+    [
+      0.121632,
+      "b"
+    ],
+    [
+      0.212191,
+      "o"
+    ],
+    [
+      0.145899,
+      "s"
+    ],
+    [
+      0.1881,
+      "e"
+    ],
+    [
+      0.292216,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001426,
+      "\u001b]2;./gradlew --daemon run --console=verbose\u0007\u001b]1;gw\u0007"
+    ],
+    [
+      0.310135,
+      "\u001b[0m"
+    ],
+    [
+      0.235446,
+      "\r\n"
+    ],
+    [
+      6.8e-05,
+      "\r\n"
+    ],
+    [
+      0.000131,
+      "\u001b[2A\u001b[1m<\u001b[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s]\u001b[m\u001b[36D\u001b[1B\u001b[1m> Evaluating settings\u001b[m\u001b[21D\u001b[1B"
+    ],
+    [
+      0.087437,
+      "\u001b[2A\u001b[1m<\u001b[0;32;1;0;39;1m-------------> 0% EXECUTING [0s]\u001b[m\u001b[0K\u001b[33D\u001b[1B> IDLE\u001b[0K\u001b[6D\u001b[1B"
+    ],
+    [
+      0.131898,
+      "\u001b[2A\u001b[1m> Task :processResources\u001b[m\u001b[33m NO-SOURCE\u001b[39m\r\n\u001b[1m> Task :number-utils:compileJava\u001b[m\u001b[33m \u001b[39m\r\n"
+    ],
+    [
+      1.9e-05,
+      "\u001b[1m> Task :number-utils:processResources\u001b[m\u001b[33m NO-SOURCE\u001b[39m\r\n"
+    ],
+    [
+      9e-06,
+      "\u001b[1m> Task :number-utils:classes\u001b[m\u001b[33m \u001b[39m\r\n"
+    ],
+    [
+      2.9e-05,
+      "\u001b[1m> Task :number-utils:jar\u001b[m\u001b[33m \u001b[39m\r\n"
+    ],
+    [
+      7.3e-05,
+      "\u001b[1m> Task :compileJava\u001b[m\u001b[33m UP-TO-DATE\u001b[39m\r\n\u001b[1m> Task :classes\u001b[m\u001b[33m UP-TO-DATE\u001b[39m\r\n"
+    ],
+    [
+      1.4e-05,
+      "\u001b[0K\r\n\u001b[0K\r\n"
+    ],
+    [
+      6.9e-05,
+      "\u001b[2A\u001b[1m<\u001b[0;32;1m=========\u001b[0;39;1m----> 75% EXECUTING [0s]\u001b[m\u001b[34D\u001b[1B\u001b[1m> :run\u001b[m\u001b[6D\u001b[1B"
+    ],
+    [
+      0.00095,
+      "\u001b[2A\u001b[1m> Task :run\u001b[m\u001b[33m \u001b[39m\u001b[0K\r\nThe answer is 42\r\n\r\n\r\n\u001b[32;1mBUILD SUCCESSFUL\u001b[0;39m in 0s\r\n"
+    ],
+    [
+      1e-05,
+      "2 actionable tasks: 1 executed, 1 up-to-date\r\n"
+    ],
+    [
+      8e-06,
+      "\u001b[2K"
+    ],
+    [
+      0.000956,
+      "\u001b[0m"
+    ],
+    [
+      0.323771,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000102,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.052399,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      1.9e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      9.670279,
+      "m"
+    ],
+    [
+      0.100959,
+      "\bmv"
+    ],
+    [
+      0.862062,
+      " "
+    ],
+    [
+      0.213614,
+      "m"
+    ],
+    [
+      0.130384,
+      "o"
+    ],
+    [
+      0.079145,
+      "d"
+    ],
+    [
+      0.202795,
+      "ules\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.973563,
+      "\b\u001b[0m/c"
+    ],
+    [
+      0.059707,
+      "o"
+    ],
+    [
+      0.238102,
+      "m"
+    ],
+    [
+      0.163969,
+      "\u0007"
+    ],
+    [
+      0.708508,
+      "\b \b"
+    ],
+    [
+      0.136034,
+      "\b \b"
+    ],
+    [
+      0.377296,
+      "\b \b"
+    ],
+    [
+      0.089044,
+      "number-utils\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.905763,
+      "\b\u001b[0m \b"
+    ],
+    [
+      0.181172,
+      " "
+    ],
+    [
+      0.166894,
+      "a"
+    ],
+    [
+      0.135551,
+      "t"
+    ],
+    [
+      0.148473,
+      "t"
+    ],
+    [
+      0.151647,
+      "ic\u001b[1m/\u001b[0m"
+    ],
+    [
+      0.454313,
+      "\b\u001b[0m \b\u001b[?1l\u001b>"
+    ],
+    [
+      0.00014,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001893,
+      "\u001b]2;mv modules/number-utils attic\u0007\u001b]1;mv\u0007"
+    ],
+    [
+      0.003221,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000124,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007"
+    ],
+    [
+      4.4e-05,
+      "\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.047075,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      4e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      1.401976,
+      "mv modules/number-utils attic"
+    ],
+    [
+      0.217682,
+      "\u001b[29Dgw run --console=verbose     \b\b\b\b\b"
+    ],
+    [
+      0.625647,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      4.5e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.00178,
+      "\u001b]2;./gradlew --daemon run --console=verbose\u0007\u001b]1;gw\u0007"
+    ],
+    [
+      0.309179,
+      "\u001b[0m"
+    ],
+    [
+      0.234436,
+      "\r\n\r\n"
+    ],
+    [
+      3.9e-05,
+      "\u001b[2A\u001b[1m<\u001b[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s]\u001b[m\u001b[35D\u001b[1B\u001b[1m> root project\u001b[m\u001b[14D\u001b[1B"
+    ],
+    [
+      0.087748,
+      "\u001b[2A\u001b[1m> Task :compileJava\u001b[m\u001b[33m UP-TO-DATE\u001b[39m\u001b[0K\r\n\u001b[1m> Task :processResources\u001b[m\u001b[33m NO-SOURCE\u001b[39m\r\n"
+    ],
+    [
+      2.6e-05,
+      "\u001b[1m> Task :classes\u001b[m\u001b[33m UP-TO-DATE\u001b[39m\r\n\u001b[0K\r\n\u001b[0K\r\n"
+    ],
+    [
+      1.4e-05,
+      "\u001b[2A\u001b[1m<\u001b[0;32;1m=========\u001b[0;39;1m----> 75% EXECUTING [0s]\u001b[m\u001b[34D\u001b[1B\u001b[1m> :run\u001b[m\u001b[6D\u001b[1B"
+    ],
+    [
+      0.019134,
+      "\u001b[2A\u001b[1m> Task :run\u001b[m\u001b[33m \u001b[39m\u001b[0K\r\n"
+    ],
+    [
+      3.7e-05,
+      "The answer is 43\r\n\r\n\r\n\u001b[32;1mBUILD SUCCESSFUL\u001b[0;39m in 0s\r\n"
+    ],
+    [
+      4.9e-05,
+      "2 actionable tasks: 1 executed, 1 up-to-date\r\n\u001b[2K"
+    ],
+    [
+      0.001943,
+      "\u001b[0m"
+    ],
+    [
+      0.322844,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000143,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007"
+    ],
+    [
+      4.1e-05,
+      "\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.046728,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      2.7e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      6.465875,
+      "c"
+    ],
+    [
+      0.215611,
+      "\bca"
+    ],
+    [
+      0.210451,
+      "t"
+    ],
+    [
+      0.139319,
+      " "
+    ],
+    [
+      0.165793,
+      "s"
+    ],
+    [
+      0.194879,
+      "e"
+    ],
+    [
+      0.1838,
+      "t"
+    ],
+    [
+      0.163445,
+      "t"
+    ],
+    [
+      0.229213,
+      "ings.gradle\u001b[1m \u001b[0m"
+    ],
+    [
+      0.624938,
+      "\b\u001b[0m \b"
+    ],
+    [
+      3.9e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      6.9e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001346,
+      "\u001b]2;cat settings.gradle\u0007\u001b]1;cat\u0007"
+    ],
+    [
+      0.002051,
+      "rootProject.name = 'multirepo-app'\r\n\r\nfile('modules').listFiles().each { File moduleBuild ->\r\n    includeBuild moduleBuild\r\n}\r\n"
+    ],
+    [
+      0.00023,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.00018,
+      "\u001b]2;cchampeau@cedric-XPS-15: /tmp/multirepo-app\u0007"
+    ],
+    [
+      4.3e-05,
+      "\u001b]1;..multirepo-app\u0007"
+    ],
+    [
+      0.050763,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[44m\u001b[30m /tmp/multirepo-app \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      1.8e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      4.228143,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ],
+  "duration": 87.75667,
+  "title": null,
+  "env": {
+    "SHELL": "/bin/zsh",
+    "TERM": "xterm-256color"
+  },
+  "height": 24,
+  "width": 80,
+  "version": 1,
+  "command": null
+}

@@ -1,0 +1,114 @@
+[background-color="#02303A"]
+== Migrating from Groovy
+
+[background-color="#02303A"]
+=== Migrating from Groovy
+
+==== Demonstration
+
+===== link:https://github.com/eskatos/android-sunflower[github.com/eskatos/android-sunflower]
+
+[NOTE.speaker]
+--
+* https://github.com/eskatos/android-sunflower/compare/0_gradle5...eskatos:7_app_script
+* android-sunflower +
+** enable `--parallel` and `--build-cache`
+** update to Gradle 5
+* prepare scripts
+* settings
+* Define versions in a single place
+** introduce buildSrc
+** move deps declaration to buildSrc
+* root build script
+** spotless
+* app build script
+** android.buildTypes
+** dokka
+--
+
+=== What benefits?
+
+[%step]
+- Type-safety
+- Discoverability
+- Documentation and navigation
+- Refactorings
+
+
+=== Shared functions
+
+[%step]
+* Just like shared declarations (e.g. dependencies)
+* Don't use extra properties
+* Move them to `buildSrc`
+* Get IDE support
+
+
+=== Interoperability
+
+[%step]
+* Gradle Plugins may
+** expose untyped Groovy `Closure` taking functions
+** rely on more Groovy dynamism
+* e.g. Dokka required the use of `delegateClosureOf<T> {}`
+** link:https://github.com/Kotlin/dokka/pull/358[existing fix] will go in the next release
+
+=== Interoperability
+
+[%step]
+* `closureOf<T> {}` and `delegateClosureOf<T> {}`
+* `withGroovyBuilder {}`
+* `apply(from = "some-groovy-script.gradle")`
+* Covered in detail in the Gradle user manual
+** link:{user-manual}kotlin_dsl.html[docs.gradle.org/current/kotlin_dsl.html]
+
+
+=== Script Plugins
+
+[%step]
+* A script plugin is a `.gradle(.kts)` script
+* Applied from another one
+** `apply(from = "some.gradle.kts")`
+* Do not support the `plugins {}` block, yet
+* Covered in detail in the Gradle user manual
+** link:{user-manual}kotlin_dsl.html[docs.gradle.org/current/kotlin_dsl.html]
+
+
+=== Precompiled script plugins
+
+[%step]
+* Same as script plugins
+* Compiled as part of a Kotlin source set
+* Can be used in `buildSrc`
+* Can be used in binary plugins
+* Covered in detail in the Gradle user manual
+** link:{user-manual}kotlin_dsl.html[docs.gradle.org/current/kotlin_dsl.html]
+
+
+=== Migration strategies
+
+[%step]
+* Kotlin and Groovy build logic can coexist
+** mechanical step by step migration possible
+** migrating doesn't block your team
+* Prepare your build to make it easier to migrate
+* by making your Groovy scripts closer to Kotlin
+** unify quotes, disambiguate properties/functions  ...
+* by applying Gradle fundamentals and best practices
+** use `buildSrc` and `plugins {}` etc...
+* Let Kotlin logic drive Groovy logic
+** not the other way around
+
+
+=== Resources for migration
+
+[%step]
+* Migration guide available at link:https://guides.gradle.org/[guides.gradle.org]
+* Gradle user manual available at link:{user-manual}[docs.gradle.org]
+** both Groovy/Kotlin snippets
+** best place to learn how to do what with each DSL, and compare
+
+
+=== Groovy and Kotlin samples
+
+image::user-manual-samples.gif[background,width=756,height=483]

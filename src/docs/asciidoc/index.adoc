@@ -1,0 +1,131 @@
+= : Type safe build logic with the Gradle Kotlin DSL
+Hans Dockter & Paul Merlin - KotlinConf 2018
+2018-10-04
+:revnumber: {project-version}
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../java]
+:navigation:
+:menu:
+:status:
+:title-slide-background-image: title.jpeg
+:title-slide-transition: zoom
+:title-slide-transition-speed: fast
+:icons: font
+
+
+include::chapters/00_intro.adoc[]
+
+
+== Who am I
+
+++++
+<style>
+.asciinema-terminal.font-medium {
+  font-size: 16px;
+}
+</style>
+++++
+
+
+[source,kotlin]
+----
+speaker {
+    name = "Paul Merlin"
+    company = "Gradle"
+    oss  = "Apache Polygene PMC, former chair",
+    successes = listOf(
+        "BASIC 'Hello, World!' in 1986",
+        "C 'Hello, World!' in 1989",
+        "Java 'Hello, World!' in 1996"
+        "Kotlin 'Hello, World!' in 2015",
+        "tools", "daemons", "apps", "frameworks", "libs"
+    ),
+    failures = generateSequence(code) { bugs },
+    twitter = "@eskat0s",
+    github = "eskatos"
+}
+----
+
+
+[background-color="#02303A"]
+== Agenda
+
+* Gradle Build Tool in a nutshell
+* Type-safe build logic
+* What makes this possible?
+* Migrating from Groovy scripts
+* Taking a step back
+* Performance
+* Wrapping up
+
+
+include::chapters/01_what_is_gradle.adoc[]
+
+include::chapters/02_gradle_in_a_nutshell.adoc[]
+
+include::chapters/03_type_safe_build_logic.adoc[]
+
+include::chapters/04_how.adoc[]
+
+include::chapters/05_migrating_from_groovy.adoc[]
+
+include::chapters/06_step_back.adoc[]
+
+include::chapters/07_performance.adoc[]
+
+
+[background-color="#02303A"]
+== Wrapping up
+
+=== Ready for general use
+
+Gradle 5.0 is when the Gradle Kotlin DSL is ready for general use!
+
+*Please give it a try with Gradle 5.0-M1!*
+
+==== link:https://gradle.org/release-candidate/[gradle.org/release-candidate]
+
+
+=== Gradle Kotlin DSL Team
+
+* Chris Beams link:https://twitter.com/cbeams[@cbeams]
+* Rodrigo B. de Oliveira link:https://twitter.com/rodrigobamboo[@rodrigobamboo]
+* myself
+* contributors from other teams at Gradle
+* [.small]#even from some Groovy commiters ツ#
+
+
+=== Gradle Kotlin DSL Community
+
+We wouldn't be here without the community!
+
+* Very friendly and active Kotlin community
+* Bug reports, of course
+* But also pull-requests, code reviews, *documentation*, support to others
+
+==== Thank you!
+
+Join us at link:https://gradle.org/slack/[gradle.org/slack]
+
+
+[background-color="#02303A"]
+== Questions
+
+Gradle 5.0-M1::
+link:https://gradle.org/release-candidate/[gradle.org/release-candidate]
+Slides::
+link:https://eskatos.github.io/kotlinconf2018-type-safe-build-logic[eskatos.github.io/kotlinconf2018-type-safe-build-logic]
+Documentation::
+link:https://docs.gradle.org/[docs.gradle.org]
+Issue tracker::
+link:https://github.com/gradle/kotlin-dsl/issues[github.com/gradle/kotlin-dsl/issues]
+Slack::
+link:https://gradle.org/slack/[gradle.org/slack]
+We're hiring!::
+link:https://gradle.com/careers/[gradle.com/careers]
+
+
+[background-image="outro.jpeg"]
+[%notitle]
+== Thank you

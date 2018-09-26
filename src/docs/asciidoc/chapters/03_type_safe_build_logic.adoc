@@ -1,0 +1,52 @@
+[background-color="#02303A"]
+== Type-safe build logic
+
+=== Why type-safe build logic?
+
+[%step]
+* Developer experience
+[%step]
+** Authoring build logic
+** Troubleshooting build issues
+* IDE Support
+* Less surprises at runtime
+[%step]
+** failing late
+** performance impact of dynamism
+
+=== Gradle meets Kotlin
+
+[%step]
+- Kotlin, the language
+- A type safety galore
+- Great tooling and IDE support
+
+=== The Gradle Kotlin DSL
+
+image::logos/gradle-kotlin.svg[height=400px]
+
+Uniting a dynamic configuration model and a statically typed language
+
+[background-color="#02303A"]
+=== Type-safe build logic
+
+==== Demonstration
+
+===== link:https://github.com/eskatos/TODO[github.com/eskatos/TODO]
+
+
+[NOTE.speaker]
+--
+- IntelliJ IDEA & Android Studio
+- Clarify auto-gradle-sync vs. auto-reload-script
+--
+
+
+=== What did we just see?
+
+[%step]
+- A build whose logic is entirely written in Kotlin
+- Type safety, null safety
+- API and model discoverability
+- Documentation and navigation to sources
+- Refactorings

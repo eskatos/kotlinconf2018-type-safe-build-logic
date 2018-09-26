@@ -1,0 +1,11 @@
+extensions {
+    inlinemacro(name: "screencast") { parent, target, attributes ->
+        def pid = "player-container-${UUID.randomUUID()}"
+        """
+<div id="$pid"></div>
+  <script>
+    asciinema_player.core.CreatePlayer('$pid', '${target}.json', { width: 114, height: 24, fontSize: 'medium' });
+  </script>
+"""
+    }
+}

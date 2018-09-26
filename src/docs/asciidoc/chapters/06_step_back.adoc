@@ -1,0 +1,30 @@
+
+[background-color="#02303A"]
+== Taking a step back
+
+=== Organize build logic
+
+[%step]
+* `buildSrc`
+* Gradle Plugins, Gradle Plugins, Gradle Plugins
+* `plugins {}`, `plugins {}`, `plugins {}`
+* Basically, apply Gradle link:{user-manual}userguide.html#authoring-build-scripts[fundamentals] and link:{user-manual}userguide.html#best-practices[best practices]
+* Profit
+
+
+=== Authoring type-safe plugins
+
+[%step]
+* Plugins contribute to the DSL
+* They should do so in a type-safe manner
+[%step]
+** Don't expose `groovy.lang.Closure<*>` taking methods
+** Use explicit types instead, like `Action<T>`
+** If written in Kotlin, prefer `Action<T>` over Kotlin lambdas
+* Again, apply Gradle fundamentals and best practices
+** link:https://gradle.org/guides/?q=Plugin%20Development[gradle.org/guides/?q=Plugin%20Development]
+
+[NOTE.speaker]
+--
+It is mostly about avoiding pitfalls
+--
