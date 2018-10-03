@@ -109,7 +109,8 @@ val asciidoctor by tasks.existing(AsciidoctorTask::class) {
             "revealjs_history" to "true",
             "revealjs_slideNumber" to "true",
             "revealjs_theme" to "gradle",
-            "examples" to file("$projectDir/examples")
+            "examples" to file("$projectDir/examples"),
+            "user-manual" to "https://docs.gradle.org/5.0-milestone-1/userguide/"
     )
     options(mapOf(
             "template_dirs" to listOf(

@@ -32,12 +32,11 @@ Uniting a dynamic configuration model and a statically typed language
 
 ==== Demonstration
 
-===== link:https://github.com/eskatos/TODO[github.com/eskatos/TODO]
+===== link:https://github.com/eskatos/kotlinconf18-greetings[github.com/eskatos/kotlinconf18-greetings]
 
 
 [NOTE.speaker]
 --
-- IntelliJ IDEA & Android Studio
 - Clarify auto-gradle-sync vs. auto-reload-script
 --
 

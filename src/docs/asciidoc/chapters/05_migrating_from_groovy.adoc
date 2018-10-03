@@ -60,7 +60,7 @@
 * `withGroovyBuilder {}`
 * `apply(from = "some-groovy-script.gradle")`
 * Covered in detail in the Gradle user manual
-** link:{user-manual}kotlin_dsl.html[docs.gradle.org/current/kotlin_dsl.html]
+** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]
 
 
 === Script Plugins
@@ -71,7 +71,7 @@
 ** `apply(from = "some.gradle.kts")`
 * Do not support the `plugins {}` block, yet
 * Covered in detail in the Gradle user manual
-** link:{user-manual}kotlin_dsl.html[docs.gradle.org/current/kotlin_dsl.html]
+** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]
 
 
 === Precompiled script plugins
@@ -82,7 +82,7 @@
 * Can be used in `buildSrc`
 * Can be used in binary plugins
 * Covered in detail in the Gradle user manual
-** link:{user-manual}kotlin_dsl.html[docs.gradle.org/current/kotlin_dsl.html]
+** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]
 
 
 === Migration strategies

@@ -60,7 +60,7 @@ image::perf-vs-groovy.png[width=640,height=180]
 * Compilation avoidance
 * Parallel script compilation
 * Faster Kotlin compilation
-* Targeted optimization
+* Targeted optimizations
 
 === General performance advice
 
