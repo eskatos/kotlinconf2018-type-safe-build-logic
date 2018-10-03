@@ -18,12 +18,14 @@
 
 [%step]
 - Kotlin, the language
-- A type safety galore
+- Type safety & null safety
 - Great tooling and IDE support
 
 === The Gradle Kotlin DSL
 
 image::logos/gradle-kotlin.svg[height=400px]
+
+==== link:https://gradle.org/kotlin/[gradle.org/kotlin]
 
 Uniting a dynamic configuration model and a statically typed language
 

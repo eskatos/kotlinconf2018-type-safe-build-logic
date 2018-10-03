@@ -43,12 +43,32 @@ image::perf-vs-groovy.png[width=640,height=180]
 
 === Gradle Build Cache
 
+[.lead]
+*to the rescue*
+
 [%step]
 * Script compilation can be cached in a Gradle Build Cache
-* `org.gradle.caching=true` or `--build-cache`
+* Simply enable it
+** `org.gradle.caching=true` in your `gradle.properties`
+** or use `--build-cache` on the command line
+
+
+=== Gradle Build Cache
+
+image::scan-first-use.png[width=336,height=175,link=https://scans.gradle.com/s/7letr5rieqkly/performance/configuration#build.gradle.kts]
+
+link:https://scans.gradle.com/s/7letr5rieqkly/performance/configuration#build.gradle.kts[First use]
+
+image::scan-reuse.png[width=336,height=175,link=https://scans.gradle.com/s/64zazvwsvpeak/performance/configuration#build.gradle.kts]
+
+link:https://scans.gradle.com/s/64zazvwsvpeak/performance/configuration#build.gradle.kts[Cached]
+
+=== Gradle Build Cache
+
+[%step]
+* Local and remote caches
 * In general, build cache helps with your overall build performance
 ** link:https://guides.gradle.org/using-build-cache/[guides.gradle.org/using-build-cache]
-* Local and remote
 * Gradle provides a Docker image for a link:https://hub.docker.com/r/gradle/build-cache-node/[build cache node]
 * Pair it with Gradle Enterprise to get
 ** replication, monitoring, node management etc...
