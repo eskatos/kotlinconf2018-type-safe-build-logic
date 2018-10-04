@@ -28,8 +28,9 @@ integrationTests {
 [%step]
 * Hoped that ecosystem will eventually provide a solution
 * Underestimated the negative impact
-* Models hard to configure for developers
-* Models hard to refactor and evolve for build authors
+[%step]
+** Models hard to configure for developers
+** Models hard to refactor and evolve for build authors
 * A lot of non-idiomatic Gradle code because of this
 
 === Kotlin is the missing link
