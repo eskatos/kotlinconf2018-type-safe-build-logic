@@ -13,8 +13,7 @@ integrationTests {
     db {
         jdbcUrl = "…"
     }
-    legacy {
-    }
+    legacy { }
 }
 ----
 
@@ -23,15 +22,15 @@ integrationTests {
 * The underlying logic creates the “how”
 * Groovy provided an extensible DSL language
 
-=== Lack of tooling support
+=== Naivety around tooling support
 
 [%step]
-* Hoped that ecosystem will eventually provide a solution
-* Underestimated the negative impact
+* Dynamicity + Metaprogramming ==> Tooling is difficult
+* Negative impact was underestimated
 [%step]
-** Models hard to configure for developers
-** Models hard to refactor and evolve for build authors
-* A lot of non-idiomatic Gradle code because of this
+** Hard to configure 
+** Hard to refactor 
+* Cause for a lot of non-idiomatic Gradle build scripts
 
 === Kotlin is the missing link
 
