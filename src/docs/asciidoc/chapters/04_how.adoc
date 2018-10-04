@@ -12,12 +12,10 @@
 === `.kt` vs `.kts` vs `.gradle.kts`
 
 [%step]
-* `.kt` files contain plain Kotlin code
-** assumed to be compiled by the kotlin compiler
-* `.kts` files contain Kotlin code
-** assumed to be executed by the kotlin scripting support
-* `.gradle.kts` files contain Kotlin code
-** assumed to be hosted by Gradle
+* they all contain Kotlin code
+* `.kt` files are assumed to be compiled by the kotlin compiler
+* `.kts` files are assumed to be executed by the kotlin scripting support
+* `.gradle.kts` files are assumed to be hosted by Gradle
 
 === `.gradle.kts`
 
@@ -38,7 +36,7 @@ image::ide-matrix.png[width=850,height=450]
 ** `KClass<T>`, `reified<T>()`
 ** Delegated properties for Gradle properties and collections
 * Dynamically generated Kotlin extensions
-** calculated right before evaluating the script body
 ** for model elements contributed by plugins (configurations, extensions, tasks etc...)
+** calculated right before evaluating the script body
 * Interoperability utilities
 // * Configuration avoidance by default

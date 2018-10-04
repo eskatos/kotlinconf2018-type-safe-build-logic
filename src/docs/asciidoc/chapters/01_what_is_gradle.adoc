@@ -5,14 +5,12 @@
 
 Gradle Build Tool is a build and automation tool
 
-[%step]
 * JVM based
 * Implemented in Java
 * 100% Free Open Source - Apache Standard License 2.0
 
 === Agnostic Build System
 
-[%step]
 * JVM ecosystem
 ** Java, Kotlin, Groovy, Scala, Clojure ...
 * Native ecosystem
@@ -23,7 +21,6 @@ Gradle Build Tool is a build and automation tool
 
 === Gradle in figures
 
-[%step]
 * > 6M downloads / month
 * https://techcrunch.com/2017/04/07/tracking-the-explosive-growth-of-open-source-software/[#17 OSS projects worldwide] says TechCrunch
 * 35+ Gradle Engineers
@@ -33,7 +30,6 @@ Gradle Build Tool is a build and automation tool
 
 The company behind Gradle
 
-[%step]
 * Gradle Build Tool - link:https://gradle.org[gradle.org]
 * Gradle Enterprise (Build Scans and Build Cache) - link:https://gradle.com[gradle.com]
 * (Gradle consulting, support, development services etc.)

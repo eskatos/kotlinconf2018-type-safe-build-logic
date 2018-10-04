@@ -63,28 +63,6 @@
 ** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]
 
 
-=== Script Plugins
-
-[%step]
-* A script plugin is a `.gradle(.kts)` script
-* Applied from another one
-** `apply(from = "some.gradle.kts")`
-* Do not support the `plugins {}` block, yet
-* Covered in detail in the Gradle user manual
-** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]
-
-
-=== Precompiled script plugins
-
-[%step]
-* Same as script plugins
-* Compiled as part of a Kotlin source set
-* Can be used in `buildSrc`
-* Can be used in binary plugins
-* Covered in detail in the Gradle user manual
-** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]
-
-
 === Migration strategies
 
 [%step]
@@ -112,3 +90,25 @@
 === Groovy and Kotlin samples
 
 image::user-manual-samples.gif[background,width=756,height=483]
+
+
+=== Script Plugins
+
+[%step]
+* A script plugin is a `.gradle(.kts)` script
+* Applied from another one
+** `apply(from = "some.gradle.kts")`
+* Do not support the `plugins {}` block, yet
+* Covered in detail in the Gradle user manual
+** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]
+
+
+=== Precompiled script plugins
+
+[%step]
+* Same as script plugins
+* Compiled as part of a Kotlin source set
+* Can be used in `buildSrc`
+* Can be used in binary plugins
+* Covered in detail in the Gradle user manual
+** link:https://docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html[docs.gradle.org/5.0-milestone-1/userguide/kotlin_dsl.html]

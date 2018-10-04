@@ -11,8 +11,8 @@
 * IDE Support
 * Less surprises at runtime
 [%step]
-** failing late
-** performance impact of dynamism
+** shorter feedback loop
+** avoid the performance impact of dynamism
 
 === Gradle meets Kotlin
 
